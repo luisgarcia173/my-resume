@@ -1,0 +1,165 @@
+{
+	"data": {
+		"profileImage": "/images/profile.png",
+		"nickName": "Luis Garcia",
+		"name": "Luis Carlos Nascimento Garcia",
+		"age": 30,
+		"married": true,
+		"children": 1,
+		"location": "Sorocaba, SP - Brazil",
+		"contacts": {
+			"mobile": "+55 15 998289516",
+			"email": "luisgarcia173@gmail.com"
+		},
+		"social": {
+			"skype": "lncgarcia",
+			"linkedin": "https://www.linkedin.com/in/lncgarcia",
+			"twitter": "none",
+			"facebook": "none"
+		},
+		"summary": "Over 7 years working on web based applications using Java. Acting as Technical Team Lead, the most of time studing about new frameworks and patterns to help the team improving more and more.",
+		"objective": "Full-stack Developer",
+		"education": [
+			{
+				"school": "University Nove de Julho",
+				"conclusion": 2008,
+				"title":  "Graduation",
+				"course":  "Computer Science"
+			},
+			{
+				"school": "University Padre Anchieta",
+				"conclusion": 2012,
+				"title":  "Post-Graduation",
+				"course":  "Expertise in Systems Development using Java"
+			}
+		],
+		"languages": [
+			{	
+				"name": "Portuguese",
+				"level": "Native"
+			},
+			{	
+				"name": "English",
+				"level": "Work Proficiency"
+			}
+		]
+		,
+		"technicalSkills": [
+			{
+				"index": "Persistence API",
+				"values": ["JDBC","Hibernate","JPA", "Spring JDBC", "Kodo"]
+			},
+			{
+				"index": "Web Frameworks",
+				"values": ["JSF", "Tomahawk", "Richfaces", "Primefaces", "Struts + Tiles", "Spring MVC", "Servlets", "VRaptor", "Zkoss", "AngularJS"]
+			},
+			{
+				"index": "WebServices",
+				"values": ["WSDL", "XML", "XSD", "SOAP", "REST"]
+			},
+			{
+				"index": "Database",
+				"values": ["Oracle", "MS-SQLServer", "MySQL", "PostgreSQL", "Informix", "MongoDB (NoSQL)", "SQLite"]
+			},
+			{
+				"index": "Mobile",
+				"values": ["J2ME", "Android", "IONIC (Cordova + AngularJs)"]
+			},
+			{
+				"index": "WebServers",
+				"values": ["Tomcat", "JBoss", "Glassfish", "Jetty", "Websphere"]
+			},
+
+			{
+				"index": "Subversion",
+				"values": ["CVS", "SVN", "Git", "SourceSafe", "ClearCase"]
+			},
+			{
+				"index": "Front-end",
+				"values": ["Html", "CSS + Bootstrap", "JavaScript", "Jquery", "Bootstrap", "AngularJS 1 and 2 (Typescript)"]
+			},
+			{
+				"index": "Bigdata",
+				"values": ["Hadoop FS", "MapReduce", "Cloudera Distribution"]
+			},
+			{
+				"index": "Other",
+				"values": ["NodeJs", "Express", "Spring (IOC, AOP & Security)", "EJB", "Log4j", "Quartz Scheduler", "Maven", "Socket", "Ant", "LDAP", "Swing (Desktop)", "Lombok", "Hudson", "Junit"]
+			}
+		],
+		"experiences": [
+			{
+				"company": "GFT Brasil - Software House",
+				"jobTitle": "Technical Team Lead, Full-stack Developer",
+				"periodIn": "2013-05-01T12:00:00",
+				"periodOut": null,
+				"duties": "Technical Team Lead of projects use Java as main technology. I should maintain about 8 corporate applications. Analyse all demanding change and to propose the best solution or the one that fits in the available schedule.",
+				"technologies": ["Java EE/SE 1.4 ~ 1.6", "JBoss", "Tomcat", "Kodo", "Webservices SOAP/Rest", "Struts 1", "Tiles", "Taglibs", "SVN", "LDAPServices", "HTML5", "Spring", "Maven", "Log", "Oracle DB"]
+			},
+			{
+				"company": "Resource IT - Outsourcing",
+				"jobTitle": "Senior Developer",
+				"periodIn": "2012-12-01T12:00:00",
+				"periodOut": "2013-05-01T12:00:00",
+				"duties": "Allocated in Netpoints client, joining the development team (back-end), I should analyse, requirement survey and create new features to web Company’s ERP.",
+				"technologies": ["Java EE/SE 1.6 ~ 1.7", "JBoss 6.1", "Hibernate 3", "JPA2", "WebServices JAX-WS", "Spring 2.5 ~ 3.x", "PostgreSQL", "Junit", "Maven", " SVN"]
+			},
+			{
+				"company": "BRQ - Outsourcing",
+				"jobTitle": "Senior Developer",
+				"periodIn": "2012-09-01T12:00:00",
+				"periodOut": "2012-11-01T12:00:00",
+				"duties": "Allocated in BM&F Bovespa client, helping the analysts creating new web services to be consumed for other cost-centers.",
+				"technologies": ["Java", "JBoss", "Hibernate", "JPA", "WebServices (Contract First, WSDL, JAXB, XML, XSD)", "EJB3", "Oracle", "Junit", "Maven", "ClearCase"]
+			},
+			{
+				"company": "LepNet - Outsourcing",
+				"jobTitle": "Java Consultant",
+				"periodIn": "2012-03-01T12:00:00",
+				"periodOut": "2012-08-01T12:00:00",
+				"duties": "Allocated in Martin Brower client, needed to support all 28 java web applications (legacy/new).",
+				"technologies": ["Java EE", "Spring", "Tomcat", "JBoss", "Servlets", "EJB", "ZK", "SQLServer", "Hibernate", "JPA", "JDBC", "Struts", "WebServices", "Log4j", "CVS", "Junit"]
+			},
+			{
+				"company": "DBW Databases - Outsourcing",
+				"jobTitle": "Java Consultant",
+				"periodIn": "2011-11-01T12:00:00",
+				"periodOut": "2012-03-01T12:00:00",
+				"duties": "Allocated in Scopus client, as developer I should create technical documents, training new team members and develop new web components using the Bradesco Bank patterns.",
+				"technologies": ["Java EE", "Spring", "JSF", "AWB(Bradesco)", "RichFaces", "TomaHawk", "Struts", "WebServices", "EJB", "Hibernate", "JTA", "Oracle", "SourceSafe", "Eclipse IDE"]
+			},
+			{
+				"company": "Mazzatech - Outsourcing",
+				"jobTitle": "Java Consultant",
+				"periodIn": "2011-08-01T12:00:00",
+				"periodOut": "2011-11-01T12:00:00",
+				"duties": "Allocated in Cleartech client, helping the mobile portability team, creating technical/functional documents, fixing pending issues from previous developer and adding new features to web application responsible for retrieve customer data using the mobile phone number.",
+				"technologies": ["JavaEE 1.6", "Hibernate", "Spring", "Struts", "JSF", "JBoss", "Oracle", "WebServices"]
+			},
+			{
+				"company": "NC4U - Digital Signage",
+				"jobTitle": "Senior Developer",
+				"periodIn": "2011-02-01T12:00:00",
+				"periodOut": "2011-08-01T12:00:00",
+				"duties": "Apply new features to Company's ERP as supplychain and production modules.",
+				"technologies": ["Java EE 1.6", "Hibernate", "Spring", "Struts", "Tomcat", "MySql", "WebServices", "Jquery", "CSS Tabless", "POI api"]
+			},
+			{
+				"company": "TIVIT (Expertise) - Software House",
+				"jobTitle": "Java Programmer",
+				"periodIn": "2010-08-01T12:00:00",
+				"periodOut": "2011-02-01T12:00:00",
+				"duties": "I should read the UML diagram, to apply the system's features to HTML prototype. In the phase II, we should implement the same logic applied before to a Desktop application integrating to Mainframe.",
+				"technologies": ["Java 1.6", "Hibernate", "Spring", "Struts", "Swing", "Servlets", "WebServices", "Tomcat", "JBoss", "MS-SQL Server", "Mainframe integration", "FDDB (Bradesco Swing API)"]
+			},
+			{
+				"company": "Porto Seguro - Insurance",
+				"jobTitle": "Junior System Analyst",
+				"periodIn": "2008-08-01T12:00:00",
+				"periodOut": "2010-08-01T12:00:00",
+				"duties": "Should maintain the car tracking system and create all integration interfaces to other applications that wish information from our database.",
+				"technologies": ["Java 1.5 (Eclipse, WSAD, Tomcat, JBoss, Jetty)", "Hibernate", "Webservices (SOAP)", "batch process", "Swing", ".Net C# (Visual Studio 2008)", "Nhibernate", "Oracle (9i e 10g)", "Informix"]
+			}
+		]
+	}
+}

@@ -1,0 +1,65 @@
+<main class="container" role="main">
+	<fieldset>
+		<legend>Info</legend>
+		<p><img src="{{resume.profileImage}}"></p>
+		<p>{{resume.name}}</p>
+		<p>{{resume.age}} years</p>
+		<p>{{resume.married == true ? 'Married' : 'Single'}} {{resume.children > 0 ? '- ' + resume.children + (resume.children == 1 ? ' child' : ' children') : ''}}</p>
+		<p>{{resume.location}}</p>
+	</fieldset>
+	<fieldset>
+		<legend>Contacts</legend>
+		<ul>
+			<li>Email: {{resume.contacts.email}}</li>
+			<li>Mobile: {{resume.contacts.mobile}}</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Social</legend>
+		<ul>
+			<li>Skype: {{resume.social.skype}}</li>
+			<li>Linkedin: {{resume.social.linkedin}}</li>
+			<li>Facebook: {{resume.social.facebook}}</li>
+			<li>Twitter: {{resume.social.twitter}}</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Objectives</legend>
+		<p>Summary: {{resume.summary}}</p>
+		<p>Objective: {{resume.objective}}</p>
+	</fieldset>
+	<fieldset>
+		<legend>Education</legend>
+		<ul>
+			<li *ngFor="let education of resume.education">
+				<p><b>{{education.title}}</b>: {{education.course}} ({{education.conclusion}}) </p>
+				<p>{{education.school}}</p>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Languages</legend>
+		<ul>
+			<li *ngFor="let language of resume.languages">
+				<p>{{language.name}}: {{language.level}}</p>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Skills</legend>
+		<ul>
+			<li *ngFor="let skill of resume.technicalSkills">
+				<b>{{skill.index}}</b>: {{skill.values}}
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Experiences</legend>
+		<div *ngFor="let experience of resume.experiences">
+			<p><b>Company: {{experience.company}}</b>, {{experience.jobTitle}}</p>
+			<p>Period: {{experience.periodIn | date:'MM/yyyy'}} ~ {{experience.periodOut == null ? 'Current' : experience.periodOut}}</p>
+			<p>Duties: {{experience.duties}}</p>
+			<p>Technologies: {{experience.technologies}}</p>
+		</div>
+	</fieldset>
+</main-->

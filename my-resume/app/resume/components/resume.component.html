@@ -1,0 +1,144 @@
+<!-- HEADER -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My Resume</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Old Version</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CONTENT -->
+<div class="container-fluid" style="padding-top: 65px;">
+  <div class="row">
+    
+    <!-- FIRST SIDE -->
+    <div class="col-md-3 sidebar">
+	    <div class="thumbnail">
+	      <img src="{{resume.profileImage}}" class="img-circle">
+	      <div class="caption">
+	        <h3>{{resume.nickName}}<br/><small>{{resume.objective}}</small></h3>
+	        <p>{{resume.summary}}</p>
+			  </div>
+			</div>
+    </div>
+
+		<!-- MAIN CONTENT -->
+    <div class="col-md-9 main">
+      <h1 class="page-header">Resume</h1>
+    </div>
+  </div>
+
+	<!-- SECOND SIDE -->
+  <div class="row">
+    <div class="col-md-3 sidebar">
+	    <div class="thumbnail">
+	      <div class="caption">
+	        <h3>Contact</h3>
+	        <p>
+	        	<i class="fa fa-skype" aria-hidden="true"></i> 
+	        	<a href="skype:{{resume.social.skype}}?add">Skype</a>
+        	</p>
+        	<p>
+        		<i class="fa fa-linkedin" aria-hidden="true"></i>
+        		<a href="{{resume.social.linkedin}}">LinkedIn</a>
+      		</p>
+        	<p>
+        		<i class="fa fa-facebook" aria-hidden="true"></i>
+        		<a href="{{resume.social.facebook}}">Facebook</a>
+      		</p>
+        	<p>
+        		<i class="fa fa-twitter" aria-hidden="true"></i> 
+        		<a href="{{resume.social.twitter}}">Twitter</a>
+      		</p>
+			  </div>
+			</div>
+    </div>
+	</div>
+</div>
+
+<!-- FOOTER -->
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+  <div class="container">
+    <div class="navbar-header">
+    	<p class="navbar-text">Powered by Luis Garcia - 2016</p>
+    </div>
+  </div>
+</nav>
+          
+
+
+
+<!--main class="container" role="main">
+	<fieldset>
+		<legend>Info</legend>
+*		<p><img src="{{resume.profileImage}}"></p>
+		<p>{{resume.name}}</p>
+		<p>{{resume.age}} years</p>
+		<p>{{resume.married == true ? 'Married' : 'Single'}} {{resume.children > 0 ? '- ' + resume.children + (resume.children == 1 ? ' child' : ' children') : ''}}</p>
+		<p>{{resume.location}}</p>
+	</fieldset>
+	<fieldset>
+		<legend>Contacts</legend>
+		<ul>
+			<li>Email: {{resume.contacts.email}}</li>
+			<li>Mobile: {{resume.contacts.mobile}}</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Social</legend>
+		<ul>
+*			<li>Skype: {{resume.social.skype}}</li>
+*			<li>Linkedin: {{resume.social.linkedin}}</li>
+*			<li>Facebook: {{resume.social.facebook}}</li>
+*			<li>Twitter: {{resume.social.twitter}}</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Objectives</legend>
+*		<p>Summary: {{resume.summary}}</p>
+*		<p>Objective: {{resume.objective}}</p>
+	</fieldset>
+	<fieldset>
+		<legend>Education</legend>
+		<ul>
+			<li *ngFor="let education of resume.education">
+				<p><b>{{education.title}}</b>: {{education.course}} ({{education.conclusion}}) </p>
+				<p>{{education.school}}</p>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Languages</legend>
+		<ul>
+			<li *ngFor="let language of resume.languages">
+				<p>{{language.name}}: {{language.level}}</p>
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Skills</legend>
+		<ul>
+			<li *ngFor="let skill of resume.technicalSkills">
+				<b>{{skill.index}}</b>: {{skill.values}}
+			</li>
+		</ul>
+	</fieldset>
+	<fieldset>
+		<legend>Experiences</legend>
+		<div *ngFor="let experience of resume.experiences">
+			<p><b>Company: {{experience.company}}</b>, {{experience.jobTitle}}</p>
+			<p>Period: {{experience.periodIn | date:'MM/yyyy'}} ~ {{experience.periodOut == null ? 'Current' : experience.periodOut}}</p>
+			<p>Duties: {{experience.duties}}</p>
+			<p>Technologies: {{experience.technologies}}</p>
+		</div>
+	</fieldset>
+</main-->
