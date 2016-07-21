@@ -3,20 +3,15 @@ import { Resume } from './../models/resume';
 import { ResumeDataService } from './../services/resume-data.service';
 
 @Component({
-	selector: 'my-resume',
-	templateUrl: 'app/resume/components/resume.component.html',
-	styleUrls: [
-		'app/resume/components/resume.component.css',
-		'app/resume/components/timeline.component.css'
-	]
+	selector: '<old-resume></old-resume>',
+	templateUrl: 'app/resume/components/resume.component.old.html',
 })
-export class ResumeComponent implements OnInit {
+export class OldResumeComponent implements OnInit {
 
 	// Page attributes
 	resume : Resume = new Resume();
 	errorMessage: string;
   mode = 'Observable';
-  language = 'English';
 
 	// Used for dependency injection (scalable and testable)
 	constructor(private resumeDataService: ResumeDataService) {}

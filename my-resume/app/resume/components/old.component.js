@@ -11,36 +11,31 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var resume_1 = require('./../models/resume');
 var resume_data_service_1 = require('./../services/resume-data.service');
-var ResumeComponent = (function () {
+var OldResumeComponent = (function () {
     // Used for dependency injection (scalable and testable)
-    function ResumeComponent(resumeDataService) {
+    function OldResumeComponent(resumeDataService) {
         this.resumeDataService = resumeDataService;
         // Page attributes
         this.resume = new resume_1.Resume();
         this.mode = 'Observable';
-        this.language = 'English';
     }
     // Better option than Constructor
-    ResumeComponent.prototype.ngOnInit = function () { this.getResume(); };
+    OldResumeComponent.prototype.ngOnInit = function () { this.getResume(); };
     // Methods
-    ResumeComponent.prototype.getResume = function () {
+    OldResumeComponent.prototype.getResume = function () {
         var _this = this;
         // Using observable
         this.resumeDataService.getResume()
             .subscribe(function (resume) { return _this.resume = resume; }, function (error) { return _this.errorMessage = error; });
     };
-    ResumeComponent = __decorate([
+    OldResumeComponent = __decorate([
         core_1.Component({
-            selector: 'my-resume',
-            templateUrl: 'app/resume/components/resume.component.html',
-            styleUrls: [
-                'app/resume/components/resume.component.css',
-                'app/resume/components/timeline.component.css'
-            ]
+            selector: '<old-resume></old-resume>',
+            templateUrl: 'app/resume/components/resume.component.old.html',
         }), 
         __metadata('design:paramtypes', [resume_data_service_1.ResumeDataService])
-    ], ResumeComponent);
-    return ResumeComponent;
+    ], OldResumeComponent);
+    return OldResumeComponent;
 }());
-exports.ResumeComponent = ResumeComponent;
-//# sourceMappingURL=resume.component.js.map
+exports.OldResumeComponent = OldResumeComponent;
+//# sourceMappingURL=old.component.js.map

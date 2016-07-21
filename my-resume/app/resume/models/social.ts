@@ -6,5 +6,6 @@ export class Social {
 	linkedin: string;
 	twitter: string;
 	facebok: string;
+	bitbucket: string;
 
 }

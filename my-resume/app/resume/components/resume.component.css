@@ -1,0 +1,9 @@
+div.social-links {
+	font-size: 20px;
+}
+
+div.contacts > p > i {
+	font-size: 20px;
+	color: red;
+}
+

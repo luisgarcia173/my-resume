@@ -1,100 +1,146 @@
 <!-- HEADER -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">My Resume</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Experience</a></li>
-        <li><a href="#">Old Version</a></li>
-      </ul>
-    </div>
+<header>
+  <div class="container">
+    <a href="/home">
+      <h1 class="logo">
+        MY<span>RESUME</span>
+      </h1>
+    </a>
+    <section class="social">
+      <a class="btn" href="skype:{{resume.social.skype}}?add"><i class="fa fa-skype" aria-hidden="true"></i> Skype</a>
+      <a class="btn" href="{{resume.social.linkedin}}"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      <a class="btn" href="{{resume.social.facebook}}"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+      <a class="btn" href="{{resume.social.bitbucket}}"><i class="fa fa-bitbucket" aria-hidden="true"></i> Bitbucket</a>
+      <a class="btn" href="{{resume.social.twitter}}"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+    </section>
   </div>
-</nav>
+</header>
 
 <!-- CONTENT -->
-<div class="container-fluid" style="padding-top: 65px;">
+<div class="container-fluid" style="padding-top: 18px;">
   <div class="row">
     
-    <!-- FIRST SIDE -->
     <div class="col-md-3 sidebar">
+    	<!-- SIDEBAR: PROFILE -->
 	    <div class="thumbnail">
 	      <img src="{{resume.profileImage}}" class="img-circle">
 	      <div class="caption">
 	        <h3>{{resume.nickName}}<br/><small>{{resume.objective}}</small></h3>
 	        <p>{{resume.summary}}</p>
+	        <hr />
+	        <div class="col-sm-6">
+	        	{{resume.age}} years old
+        	</div>
+	        <div class="col-sm-6">
+	        	{{resume.married == true ? 'Married' : 'Single'}} ({{resume.children}} <i class="fa fa-child" aria-hidden="true"></i>)	        	
+	        </div>
+	        <br />
 			  </div>
 			</div>
-    </div>
-
-		<!-- MAIN CONTENT -->
-    <div class="col-md-9 main">
-      <h1 class="page-header">Resume</h1>
-    </div>
-  </div>
-
-	<!-- SECOND SIDE -->
-  <div class="row">
-    <div class="col-md-3 sidebar">
-	    <div class="thumbnail">
+			<!-- SIDEBAR: CONTACTS -->
+			<div class="thumbnail">
 	      <div class="caption">
 	        <h3>Contact</h3>
-	        <p>
-	        	<i class="fa fa-skype" aria-hidden="true"></i> 
-	        	<a href="skype:{{resume.social.skype}}?add">Skype</a>
-        	</p>
-        	<p>
-        		<i class="fa fa-linkedin" aria-hidden="true"></i>
-        		<a href="{{resume.social.linkedin}}">LinkedIn</a>
-      		</p>
-        	<p>
-        		<i class="fa fa-facebook" aria-hidden="true"></i>
-        		<a href="{{resume.social.facebook}}">Facebook</a>
-      		</p>
-        	<p>
-        		<i class="fa fa-twitter" aria-hidden="true"></i> 
-        		<a href="{{resume.social.twitter}}">Twitter</a>
-      		</p>
+	        <div class="contacts">
+		        <p>
+		        	<i class="fa fa-map-marker" aria-hidden="true"></i>
+		        	{{resume.location}}
+		        </p>
+		        <p>
+		        	<i class="fa fa-whatsapp" aria-hidden="true"></i>
+		        	{{resume.contacts.mobile}}
+		        </p>
+		        <p>
+		        	<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		        	{{resume.contacts.email}}
+		        </p>
+	        </div>
 			  </div>
 			</div>
     </div>
-	</div>
-</div>
 
-<!-- FOOTER -->
-<nav class="navbar navbar-inverse navbar-fixed-bottom">
-  <div class="container">
-    <div class="navbar-header">
-    	<p class="navbar-text">Powered by Luis Garcia - 2016</p>
+		<!-- MAIN CONTENT: FULL CV -->
+    <div class="col-md-9 main">
+      <h1 class="page-header">Resume: <small>{{resume.name}}</small></h1>
+      <!-- BREADCRUMB -->
+      <ol class="breadcrumb">
+			  <li class="active">Home</li>
+			  <li><a href="#education">Education</a></li>
+			  <li><a href="#languages">Languages</a></li>
+				<li><a href="#skills">Skills</a></li>
+			  <li><a href="#experiences">Experience</a></li>
+			</ol>
+			<!-- EDUCATION SECTION -->
+			<div class="container" id="education">
+				<h3>EDUCATION</h3>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
+			</div>
+			<!-- LANGUAGES SECTION -->
+			<div class="container" id="languages">
+				<h3>LANGUAGES</h3>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
+			</div>
+			<!-- SKILLS SECTION -->
+			<div class="container" id="skills">
+				<h3>SKILLS</h3>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
+			</div>
+			<!-- TIMELINE: EXPERIENCES -->
+			<div class="container" id="experiences">
+			  <h3>EXPERIENCES</h3>
+			  <div id="timeline">
+			    <div class="timeline-item" *ngFor="let experience of resume.experiences">
+			      <div class="timeline-icon">
+			        <i class="fa fa-briefcase" aria-hidden="true"></i>
+			      </div>
+			      <div class="timeline-content">
+			        <h4>{{experience.company}}</h4>
+			        <p><b>{{experience.jobTitle}}</b></p>
+			        <p>
+			        	<i class="fa fa-calendar" aria-hidden="true"></i>
+			        	{{experience.periodIn | date:'MM/yyyy'}} ~ 
+			        	<i class="fa fa-calendar" aria-hidden="true"></i>
+			        	{{experience.periodOut == null ? 'Current' : experience.periodOut | date:'MM/yyyy'}}
+			        </p>
+			        <p>
+			        	<i class="fa fa-bullseye" aria-hidden="true"></i>
+			        	{{experience.duties}}
+			        </p>
+			        <div>
+			        	<i class="fa fa-search" aria-hidden="true"></i>
+			        	{{experience.technologies}}
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
     </div>
   </div>
-</nav>
-          
+
+</div>
+        
 
 
 
 <!--main class="container" role="main">
 	<fieldset>
-		<legend>Info</legend>
+*		<legend>Info</legend>
 *		<p><img src="{{resume.profileImage}}"></p>
-		<p>{{resume.name}}</p>
-		<p>{{resume.age}} years</p>
-		<p>{{resume.married == true ? 'Married' : 'Single'}} {{resume.children > 0 ? '- ' + resume.children + (resume.children == 1 ? ' child' : ' children') : ''}}</p>
-		<p>{{resume.location}}</p>
+*		<p>{{resume.name}}</p>
+*		<p>{{resume.age}} years</p>
+*		<p>{{resume.married == true ? 'Married' : 'Single'}} {{resume.children > 0 ? '- ' + resume.children + (resume.children == 1 ? ' child' : ' children') : ''}}</p>
+*		<p>{{resume.location}}</p>
 	</fieldset>
 	<fieldset>
-		<legend>Contacts</legend>
+*		<legend>Contacts</legend>
 		<ul>
-			<li>Email: {{resume.contacts.email}}</li>
-			<li>Mobile: {{resume.contacts.mobile}}</li>
+*			<li>Email: {{resume.contacts.email}}</li>
+*			<li>Mobile: {{resume.contacts.mobile}}</li>
 		</ul>
 	</fieldset>
 	<fieldset>
-		<legend>Social</legend>
+*		<legend>Social</legend>
 		<ul>
 *			<li>Skype: {{resume.social.skype}}</li>
 *			<li>Linkedin: {{resume.social.linkedin}}</li>
@@ -103,7 +149,7 @@
 		</ul>
 	</fieldset>
 	<fieldset>
-		<legend>Objectives</legend>
+*		<legend>Objectives</legend>
 *		<p>Summary: {{resume.summary}}</p>
 *		<p>Objective: {{resume.objective}}</p>
 	</fieldset>
@@ -133,12 +179,12 @@
 		</ul>
 	</fieldset>
 	<fieldset>
-		<legend>Experiences</legend>
-		<div *ngFor="let experience of resume.experiences">
-			<p><b>Company: {{experience.company}}</b>, {{experience.jobTitle}}</p>
-			<p>Period: {{experience.periodIn | date:'MM/yyyy'}} ~ {{experience.periodOut == null ? 'Current' : experience.periodOut}}</p>
-			<p>Duties: {{experience.duties}}</p>
-			<p>Technologies: {{experience.technologies}}</p>
+*		<legend>Experiences</legend>
+*		<div *ngFor="let experience of resume.experiences">
+*			<p><b>Company: {{experience.company}}</b>, {{experience.jobTitle}}</p>
+*			<p>Period: {{experience.periodIn | date:'MM/yyyy'}} ~ {{experience.periodOut == null ? 'Current' : experience.periodOut}}</p>
+*			<p>Duties: {{experience.duties}}</p>
+*			<p>Technologies: {{experience.technologies}}</p>
 		</div>
 	</fieldset>
 </main-->

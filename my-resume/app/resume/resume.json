@@ -15,7 +15,8 @@
 			"skype": "lncgarcia",
 			"linkedin": "https://www.linkedin.com/in/lncgarcia",
 			"twitter": "none",
-			"facebook": "none"
+			"facebook": "none",
+			"bitbucket": "https://bitbucket.org/luis_garcia"
 		},
 		"summary": "Over 7 years working on web based applications using Java. Acting as Technical Team Lead, the most of time studing about new frameworks and patterns to help the team improving more and more.",
 		"objective": "Full-stack Developer",
@@ -118,7 +119,7 @@
 				"periodIn": "2012-03-01T12:00:00",
 				"periodOut": "2012-08-01T12:00:00",
 				"duties": "Allocated in Martin Brower client, needed to support all 28 java web applications (legacy/new).",
-				"technologies": ["Java EE", "Spring", "Tomcat", "JBoss", "Servlets", "EJB", "ZK", "SQLServer", "Hibernate", "JPA", "JDBC", "Struts", "WebServices", "Log4j", "CVS", "Junit"]
+				"technologies": ["Java EE", "Spring", "Tomcat", "JBoss", "Servlets", "EJB", "ZK", "SQLServer", "Hibernate", "JPA", "JDBC ", "Struts", "WebServices", "Log4j", "CVS", "Junit"]
 			},
 			{
 				"company": "DBW Databases - Outsourcing",
@@ -126,7 +127,7 @@
 				"periodIn": "2011-11-01T12:00:00",
 				"periodOut": "2012-03-01T12:00:00",
 				"duties": "Allocated in Scopus client, as developer I should create technical documents, training new team members and develop new web components using the Bradesco Bank patterns.",
-				"technologies": ["Java EE", "Spring", "JSF", "AWB(Bradesco)", "RichFaces", "TomaHawk", "Struts", "WebServices", "EJB", "Hibernate", "JTA", "Oracle", "SourceSafe", "Eclipse IDE"]
+				"technologies": ["Java EE", "Spring", "JSF", "AWB(Bradesco)", "RichFaces", "TomaHawk", "Struts", "WebServices ", "EJB", "Hibernate", "JTA", "Oracle", "SourceSafe", "Eclipse IDE"]
 			},
 			{
 				"company": "Mazzatech - Outsourcing",
