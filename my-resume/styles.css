@@ -99,8 +99,10 @@ header .social .btn {
 }
 .btn:hover {
   box-shadow: none;
+  color: #f27c7c;
   top: 2px;
   left: 2px;
+  text-decoration: underline;
   -webkit-box-shadow: 2px 2px 0 transparent;
   -moz-box-shadow: 2px 2px 0 transparent;
   -ms-box-shadow: 2px 2px 0 transparent;
