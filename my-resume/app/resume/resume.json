@@ -37,53 +37,65 @@
 		"languages": [
 			{	
 				"name": "Portuguese",
-				"level": "Native"
+				"level": "Native",
+				"css": "primary"
 			},
 			{	
 				"name": "English",
-				"level": "Work Proficiency"
+				"level": "Work Proficiency",
+				"css": "info"
 			}
 		]
 		,
 		"technicalSkills": [
 			{
+				"icon": "database",
 				"index": "Persistence API",
 				"values": ["JDBC","Hibernate","JPA", "Spring JDBC", "Kodo"]
 			},
 			{
+				"icon": "cogs",
 				"index": "Web Frameworks",
 				"values": ["JSF", "Tomahawk", "Richfaces", "Primefaces", "Struts + Tiles", "Spring MVC", "Servlets", "VRaptor", "Zkoss", "AngularJS"]
 			},
 			{
+				"icon": "globe",
 				"index": "WebServices",
 				"values": ["WSDL", "XML", "XSD", "SOAP", "REST"]
 			},
 			{
+				"icon": "database",
 				"index": "Database",
 				"values": ["Oracle", "MS-SQLServer", "MySQL", "PostgreSQL", "Informix", "MongoDB (NoSQL)", "SQLite"]
 			},
 			{
+				"icon": "mobile",
 				"index": "Mobile",
 				"values": ["J2ME", "Android", "IONIC (Cordova + AngularJs)"]
 			},
 			{
+				"icon": "server",
 				"index": "WebServers",
 				"values": ["Tomcat", "JBoss", "Glassfish", "Jetty", "Websphere"]
 			},
 
 			{
+				"icon": "code-fork",
 				"index": "Subversion",
 				"values": ["CVS", "SVN", "Git", "SourceSafe", "ClearCase"]
 			},
 			{
+				"icon": "code",
 				"index": "Front-end",
 				"values": ["Html", "CSS + Bootstrap", "JavaScript", "Jquery", "Bootstrap", "AngularJS 1 and 2 (Typescript)"]
 			},
 			{
+				"icon": "file-text",
 				"index": "Bigdata",
 				"values": ["Hadoop FS", "MapReduce", "Cloudera Distribution"]
 			},
 			{
+				"icon": "info-circle",
 				"index": "Other",
 				"values": ["NodeJs", "Express", "Spring (IOC, AOP & Security)", "EJB", "Log4j", "Quartz Scheduler", "Maven", "Socket", "Ant", "LDAP", "Swing (Desktop)", "Lombok", "Hudson", "Junit"]
 			}

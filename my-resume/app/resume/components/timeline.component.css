@@ -53,7 +53,7 @@ header:after, #timeline .timeline-item:after, header:before, #timeline .timeline
   margin: 15px 0 0 15px;
 }
 #timeline .timeline-item .timeline-content {
-  width: 50%;
+  width: 75%;
   background: #fff;
   padding: 20px;
   margin-left: 50px;

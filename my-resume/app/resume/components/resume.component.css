@@ -4,6 +4,35 @@ div.social-links {
 
 div.contacts > p > i {
 	font-size: 20px;
-	color: red;
+	color: #00ff00;
 }
 
+.cian {
+	color: #538cc6;
+}
+
+.envy {
+	color: #006666;
+}
+
+.title {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+blockquote {
+  padding: 0px 10px;
+  margin: 0 0 20px;
+  font-size: 12px;
+  border-left: 5px solid #008080;
+}
+
+blockquote > p > span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.container > h3 {
+	border-bottom: 1px solid #ddd;
+}

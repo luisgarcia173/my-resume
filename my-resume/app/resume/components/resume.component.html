@@ -57,6 +57,19 @@
 	        </div>
 			  </div>
 			</div>
+			<!-- SIDEBAR: LANGUAGES -->
+			<div class="thumbnail">
+	      <div class="caption">
+	        <h3>Languages</h3>
+	        <div class="lnaguages">
+		        <p *ngFor="let language of resume.languages">
+							<i class="fa fa-globe" aria-hidden="true"></i>
+							{{language.name}}&nbsp;
+							<span class="label label-{{language.css}}">{{language.level}}</span>
+						</p>
+	        </div>
+			  </div>
+			</div>
     </div>
 
 		<!-- MAIN CONTENT: FULL CV -->
@@ -66,28 +79,43 @@
       <ol class="breadcrumb">
 			  <li class="active">Home</li>
 			  <li><a href="#education">Education</a></li>
-			  <li><a href="#languages">Languages</a></li>
 				<li><a href="#skills">Skills</a></li>
 			  <li><a href="#experiences">Experience</a></li>
 			</ol>
 			<!-- EDUCATION SECTION -->
-			<div class="container" id="education">
+			<div class="container col-md-12" id="education">
 				<h3>EDUCATION</h3>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
-			</div>
-			<!-- LANGUAGES SECTION -->
-			<div class="container" id="languages">
-				<h3>LANGUAGES</h3>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
+				<div *ngFor="let education of resume.education">
+					<span class="title envy">{{education.title}}: </span>
+					<blockquote>
+						<p>
+							<span>{{education.school}}</span>, 
+							({{education.conclusion}})
+						</p>
+						<p>
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+							{{education.course}}
+						</p>
+					</blockquote>
+				</div>
 			</div>
 			<!-- SKILLS SECTION -->
-			<div class="container" id="skills">
+			<div class="container col-md-12" id="skills">
 				<h3>SKILLS</h3>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus pulvinar metus ut hendrerit. Suspendisse ante quam, iaculis quis egestas eget, porttitor sit amet nibh. Ut id ante viverra, tempus nibh et, pellentesque ex. Duis leo leo, condimentum sit amet egestas sed, faucibus in lacus. Nam sed nibh eget neque vulputate hendrerit. Integer fringilla porta dui eu tempus. Nam iaculis at arcu at luctus. Donec vel hendrerit justo, bibendum faucibus nulla. Vestibulum porta volutpat sem, vitae egestas odio consequat vehicula. Etiam ipsum elit, interdum a lacinia et, elementum in felis. Sed ultricies ac velit eu mattis. Morbi venenatis mi eget ipsum tincidunt, non sollicitudin eros volutpat. Suspendisse tincidunt tincidunt sollicitudin. Nullam ac sagittis neque, quis laoreet felis. 
+				<ul *ngFor="let skill of resume.technicalSkills" class="list-unstyled">
+					<li>
+						<p>
+							<span class="title cian">
+								<i class="fa fa-{{skill.icon}}" aria-hidden="true"></i>
+								<b>{{skill.index}}</b>: 
+							</span>	
+							{{skill.values.join(', ')}}
+						</p>
+					</li>
+				</ul>
 			</div>
 			<!-- TIMELINE: EXPERIENCES -->
-			<div class="container" id="experiences">
+			<div class="container col-md-12" id="experiences">
 			  <h3>EXPERIENCES</h3>
 			  <div id="timeline">
 			    <div class="timeline-item" *ngFor="let experience of resume.experiences">
@@ -109,7 +137,7 @@
 			        </p>
 			        <div>
 			        	<i class="fa fa-search" aria-hidden="true"></i>
-			        	{{experience.technologies}}
+			        	{{experience.technologies.join(', ')}}
 			        </div>
 			      </div>
 			    </div>
@@ -119,72 +147,3 @@
   </div>
 
 </div>
-        
-
-
-
-<!--main class="container" role="main">
-	<fieldset>
-*		<legend>Info</legend>
-*		<p><img src="{{resume.profileImage}}"></p>
-*		<p>{{resume.name}}</p>
-*		<p>{{resume.age}} years</p>
-*		<p>{{resume.married == true ? 'Married' : 'Single'}} {{resume.children > 0 ? '- ' + resume.children + (resume.children == 1 ? ' child' : ' children') : ''}}</p>
-*		<p>{{resume.location}}</p>
-	</fieldset>
-	<fieldset>
-*		<legend>Contacts</legend>
-		<ul>
-*			<li>Email: {{resume.contacts.email}}</li>
-*			<li>Mobile: {{resume.contacts.mobile}}</li>
-		</ul>
-	</fieldset>
-	<fieldset>
-*		<legend>Social</legend>
-		<ul>
-*			<li>Skype: {{resume.social.skype}}</li>
-*			<li>Linkedin: {{resume.social.linkedin}}</li>
-*			<li>Facebook: {{resume.social.facebook}}</li>
-*			<li>Twitter: {{resume.social.twitter}}</li>
-		</ul>
-	</fieldset>
-	<fieldset>
-*		<legend>Objectives</legend>
-*		<p>Summary: {{resume.summary}}</p>
-*		<p>Objective: {{resume.objective}}</p>
-	</fieldset>
-	<fieldset>
-		<legend>Education</legend>
-		<ul>
-			<li *ngFor="let education of resume.education">
-				<p><b>{{education.title}}</b>: {{education.course}} ({{education.conclusion}}) </p>
-				<p>{{education.school}}</p>
-			</li>
-		</ul>
-	</fieldset>
-	<fieldset>
-		<legend>Languages</legend>
-		<ul>
-			<li *ngFor="let language of resume.languages">
-				<p>{{language.name}}: {{language.level}}</p>
-			</li>
-		</ul>
-	</fieldset>
-	<fieldset>
-		<legend>Skills</legend>
-		<ul>
-			<li *ngFor="let skill of resume.technicalSkills">
-				<b>{{skill.index}}</b>: {{skill.values}}
-			</li>
-		</ul>
-	</fieldset>
-	<fieldset>
-*		<legend>Experiences</legend>
-*		<div *ngFor="let experience of resume.experiences">
-*			<p><b>Company: {{experience.company}}</b>, {{experience.jobTitle}}</p>
-*			<p>Period: {{experience.periodIn | date:'MM/yyyy'}} ~ {{experience.periodOut == null ? 'Current' : experience.periodOut}}</p>
-*			<p>Duties: {{experience.duties}}</p>
-*			<p>Technologies: {{experience.technologies}}</p>
-		</div>
-	</fieldset>
-</main-->
